@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador JavaScript | Productos</title>
+    <meta name="description" content="Tenemos frutas, verduras y productos orgánicos preparados especialmente para vos, de primera calidad, además contamos con delivery y si te registrás, tenés un 10% OFF en tu primera compra">
+    <meta name="keywords" content="VERDURAS, FRUTAS, COMPRA, PRODUCTOS, VARIEDAD, CATEGORIAS">
+    <link rel="shorcut icon" href="imagenes/vegetales.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div id="arriba">¡<strong>REGISTRÁTE</strong> Y OBTENÉ UN 10% EN TU PRIMERA COMPRA!</div>
+        <nav class="navbar navbar-expand-md navbar-dark fixed" id="menu">
+            <a class="navbar-brand" id="ninguno"><img src="imagenes/vegetales.png" alt="" height="40px"> Simulador JavaScript</img>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html" id="ninguno">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html" id="ninguno">NOSOTROS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html" id="ninguno">PRODUCTOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ayuda.html" id="ninguno">AYUDA</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input id=b uscar class="form-control mr-2" type="search" placeholder="¿Qué estás buscando?" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit" id="buscador">Buscar</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="titulo">
+            <h1>Productos</h1>
+            <h2>Elegí tus productos</h2>
+            <h3 id="disponible">X productos</h3>
+        </div>
+        <picture>
+            <img src="" alt="">
+        </picture>
+        <div id="productos" class="contenedor"></div>
+        <div class="container">
+            <div class="portfolio-menu mt-2 mb-4"></div>
+            <div class="portfolio-item row">
+                <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                    <figure>
+                        <img src="imagenes/bananas.jpg" alt="" width="200px" height="150px" id="imagen">
+                        <figcaption>
+                            <p id="titulo">Banana x 1Kg</p>
+                        </figcaption>
+                    </figure>
+                    <div>
+                        <button type="button" class="btn btn-sm btn-outline-secondary" id="boton">Agregar</button>
+                        <small class="text-muted" id="precio">$80.00</small>
+                    </div>
+                </div>
+                <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                    <figure>
+                        <img src="imagenes/cebolla_morada.jpg" alt="" width="200px" height="150px" id="imagen">
+                        <figcaption>
+                            <p id="titulo">Cebolla morada x 1Kg</p>
+                        </figcaption>
+                    </figure>
+                    <div>
+                        <button type="button" class="btn btn-sm btn-outline-secondary" id="boton">Agregar</button>
+                        <small class="text-muted" id="precio">$100.00</small>
+                    </div>
+                </div>
+                <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                    <figure>
+                        <img src="imagenes/choclo.jpg" alt="" width="200px" height="150px" id="imagen">
+                        <figcaption>
+                            <p id="titulo">Choclo amarillo x Unid.</p>
+                        </figcaption>
+                    </figure>
+                    <div>
+                        <button type="button" class="btn btn-sm btn-outline-secondary" id="boton">Agregar</button>
+                        <small class="text-muted" id="precio">$90.00</small>
+                    </div>
+                </div>
+                <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                    <figure>
+                        <img src="imagenes/espinaca.jpg" alt="" width="200px" height="150px" id="imagen">
+                        <figcaption>
+                            <p id="titulo">Espinaca x atado</p>
+                        </figcaption>
+                    </figure>
+                    <div>
+                        <button type="button" class="btn btn-sm btn-outline-secondary" id="boton">Agregar</button>
+                        <small class="text-muted" id="precio">$50.00</small>
+                    </div>
+                </div>
+                <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                    <figure>
+                        <img src="imagenes/huevos_blancos.jpg" alt="" width="200px" height="150px" id="imagen">
+                        <figcaption>
+                            <p id="titulo">Maple de huevos blancos</p>
+                        </figcaption>
+                    </figure>
+                    <div>
+                        <button type="button" class="btn btn-sm btn-outline-secondary" id="boton">Agregar</button>
+                        <small class="text-muted" id="precio">$150.00</small>
+                    </div>
+                </div>
+                <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                    <figure>
+                        <img src="imagenes/huevos_colorados.jpeg" alt="" width="200px" height="150px" id="imagen">
+                        <figcaption>
+                            <p id="titulo">Maple de huevos colorados</p>
+                        </figcaption>
+                    </figure>
+                    <div>
+                        <button type="button" class="btn btn-sm btn-outline-secondary" id="boton">Agregar</button>
+                        <small class="text-muted" id="precio">$180.00</small>
+                    </div>
+                </div>
+                <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                    <figure>
+                        <img src="imagenes/lechuga_criolla.jpg" alt="" width="200px" height="150px" id="imagen">
+                        <figcaption>
+                            <p id="titulo">Lechuga criolla x planta</p>
+                        </figcaption>
+                    </figure>
+                    <div>
+                        <button type="button" class="btn btn-sm btn-outline-secondary" id="boton">Agregar</button>
+                        <small class="text-muted" id="precio">$70.00</small>
+                    </div>
+                </div>
+                <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                    <figure>
+                        <img src="imagenes/lechuga_francesa.jpg" alt="" width="200px" height="150px" id="imagen">
+                        <figcaption>
+                            <p id="titulo">Lechuga francesa x planta</p>
+                        </figcaption>
+                    </figure>
+                    <div>
+                        <button type="button" class="btn btn-sm btn-outline-secondary" id="boton">Agregar</button>
+                        <small class="text-muted" id="precio">$80.00</small>
+                    </div>
+                </div>
+                <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                    <figure>
+                        <img src="imagenes/lechuga_mantecosa.jpg" alt="" width="200px" height="150px" id="imagen">
+                        <figcaption>
+                            <p id="titulo">Lechuga mantecosa x planta</p>
+                        </figcaption>
+                    </figure>
+                    <div>
+                        <button type="button" class="btn btn-sm btn-outline-secondary" id="boton">Agregar</button>
+                        <small class="text-muted" id="precio">$60.00</small>
+                    </div>
+                </div>
+                <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                    <figure>
+                        <img src="imagenes/lechuga_repollada.jpg" alt="" width="200px" height="150px" id="imagen">
+                        <figcaption>
+                            <p id="titulo">Lechuga repollada x planta</p>
+                        </figcaption>
+                    </figure>
+                    <div>
+                        <button type="button" class="btn btn-sm btn-outline-secondary" id="boton">Agregar</button>
+                        <small class="text-muted" id="precio">$80.00</small>
+                    </div>
+                </div>
+                <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                    <figure>
+                        <img src="imagenes/morron_amarillo.jpg" alt="" width="200px" height="150px" id="imagen">
+                        <figcaption>
+                            <p id="titulo">Morron amarillo x 1Kg</p>
+                        </figcaption>
+                    </figure>
+                    <div>
+                        <button type="button" class="btn btn-sm btn-outline-secondary" id="boton">Agregar</button>
+                        <small class="text-muted" id="precio">$150.00</small>
+                    </div>
+                </div>
+                <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                    <figure>
+                        <img src="imagenes/morron_rojo.jpg" alt="" width="200px" height="150px" id="imagen">
+                        <figcaption>
+                            <p id="titulo">Morron rojo x 1Kg</p>
+                        </figcaption>
+                    </figure>
+                    <div>
+                        <button type="button" class="btn btn-sm btn-outline-secondary" id="boton">Agregar</button>
+                        <small class="text-muted" id="precio">$150.00</small>
+                    </div>
+                </div>
+                <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                    <figure>
+                        <img src="imagenes/morron_verde.jpg" alt="" width="200px" height="150px" id="imagen">
+                        <figcaption>
+                            <p id="titulo">Morron verde x 1Kg</p>
+                        </figcaption>
+                    </figure>
+                    <div>
+                        <button type="button" class="btn btn-sm btn-outline-secondary" id="boton">Agregar</button>
+                        <small class="text-muted" id="precio">$150.00</small>
+                    </div>
+                </div>
+                <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                    <figure>
+                        <img src="imagenes/palta.jpg" alt="" width="200px" height="150px" id="imagen">
+                        <figcaption>
+                            <p id="titulo">Palta x Unid.</p>
+                        </figcaption>
+                    </figure>
+                    <div>
+                        <button type="button" class="btn btn-sm btn-outline-secondary" id="boton">Agregar</button>
+                        <small class="text-muted" id="precio">$90.00</small>
+                    </div>
+                </div>
+                <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                    <figure>
+                        <img src="imagenes/papa_blanca.jpg" alt="" width="200px" height="150px" id="imagen">
+                        <figcaption>
+                            <p id="titulo">Papa blanca x 1 Kg</p>
+                        </figcaption>
+                    </figure>
+                    <div>
+                        <button type="button" class="btn btn-sm btn-outline-secondary" id="boton">Agregar</button>
+                        <small class="text-muted" id="precio">$60.00</small>
+                    </div>
+                </div>
+                <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                    <figure>
+                        <img src="imagenes/papa_negra.jpg" alt="" width="200px" height="150px" id="imagen">
+                        <figcaption>
+                            <p id="titulo">Papa negra x 1 Kg</p>
+                        </figcaption>
+                    </figure>
+                    <div>
+                        <button type="button" class="btn btn-sm btn-outline-secondary" id="boton">Agregar</button>
+                        <small class="text-muted" id="precio">$50.00</small>
+                    </div>
+                </div>
+                <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                    <figure>
+                        <img src="imagenes/papines.png" alt="" width="200px" height="150px" id="imagen">
+                        <figcaption>
+                            <p id="titulo">Papines x 500 Gr</p>
+                        </figcaption>
+                    </figure>
+                    <div>
+                        <button type="button" class="btn btn-sm btn-outline-secondary" id="boton">Agregar</button>
+                        <small class="text-muted" id="precio">$90.00</small>
+                    </div>
+                </div>
+                <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                    <figure>
+                        <img src="imagenes/remolacha.jpg" alt="" width="200px" height="150px" id="imagen">
+                        <figcaption>
+                            <p id="titulo">Remolacha x 1 Kg</p>
+                        </figcaption>
+                    </figure>
+                    <div>
+                        <button type="button" class="btn btn-sm btn-outline-secondary" id="boton">Agregar</button>
+                        <small class="text-muted" id="precio">$90.00</small>
+                    </div>
+                </div>
+                <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                    <figure>
+                        <img src="imagenes/tomate-cherry.jpg" alt="" width="200px" height="150px" id="imagen">
+                        <figcaption>
+                            <p id="titulo">Tomate cherry x 500 Gr</p>
+                        </figcaption>
+                    </figure>
+                    <div>
+                        <button type="button" class="btn btn-sm btn-outline-secondary" id="boton">Agregar</button>
+                        <small class="text-muted" id="precio">$120.00</small>
+                    </div>
+                </div>
+                <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                    <figure>
+                        <img src="imagenes/tomate_perita.jpg" alt="" width="200px" height="150px" id="imagen">
+                        <figcaption>
+                            <p id="titulo">Tomate perita x 1 Kg</p>
+                        </figcaption>
+                    </figure>
+                    <div>
+                        <button type="button" class="btn btn-sm btn-outline-secondary" id="boton">Agregar</button>
+                        <small class="text-muted" id="precio">$80.00</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <h1>Productos agregados</h1>
+        <section class="container" id="posicion">
+            <div class="row">
+                <div class="col-md-6 order-md-2 mb-4">
+                    <h4 class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="text-muted">Tu Carrito</span>
+                    </h4>
+                    <div>
+                        <ul id="carrito" class="list-group mb-3">
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="list-group-item d-flex" id="total">Total (ARS):
+                            <span></span>&dollar;</p>
+                    </div><br>
+                    <button id="boton_vaciar" class="btn btn-success confirmarCompra">Confirmar compra</button>
+                </div>
+                <!--DE MOMENTO ESTA SECCIÓN NO ESTÁ HABILITADA-->
+                <div class="col-md-6 order-md-1 ">
+                    <h4 class="d-flex justify-content-between align-items-center mb-3 ">
+                        <span class="text-muted ">Tus Datos</span></span>
+                    </h4>
+                    <form class="needs-validation " validate>
+                        <div class="row ">
+                            <div class="col-md-6 mb-3 ">
+                                <label for="firstName ">Nombre:</label>
+                                <input type="text " class="form-control " id="firstName " placeholder="Tu nombre " value=" " required>
+                            </div>
+                            <div class="col-md-6 mb-3 ">
+                                <label for="lastName ">Apellido:</label>
+                                <input type="text " class="form-control " id="lastName " placeholder="Tu apellido " value=" " required>
+                            </div>
+                        </div>
+                        <div class="mb-3 ">
+                            <label for="email ">Email:</label>
+                            <input type="email " class="form-control " id="email " placeholder="Tu email " required>
+                        </div>
+                        <div class="mb-3 ">
+                            <label for="address ">Dirección:</label>
+                            <input type="text " class="form-control " id="address " placeholder="Tu domicilio " required>
+                        </div>
+                        <div class="row ">
+                            <div class="col-md-5 mb-3 ">
+                                <label for="country ">País:</label>
+                                <select class="custom-select d-block w-100 " id="country " required>
+                                <option value=" ">Elegí</option>
+                                <option>Argentina</option>
+                            </select>
+                            </div>
+                            <div class="col-md-4 mb-3 ">
+                                <label for="state ">Provincia:</label>
+                                <select class="custom-select d-block w-100 " id="state " required>
+                                <option value=" ">Elegí</option>
+                                <option>Buenos Aires</option>
+                            </select>
+                            </div>
+                            <div class="col-md-3 mb-3 ">
+                                <label for="zip ">Código postal:</label>
+                                <input type="text " class="form-control " id="zip " placeholder="Ej: 1176 " required>
+                            </div>
+                        </div>
+                        <hr class="mb-4 ">
+                        <div class="custom-control custom-checkbox ">
+                            <input type="checkbox " class="custom-control-input " id="same-address ">
+                            <label class="custom-control-label " for="same-address ">La dirección de entrega es la misma que la de facturación</label>
+                        </div>
+                        <div class="custom-control custom-checkbox ">
+                            <input type="checkbox " class="custom-control-input " id="save-info ">
+                            <label class="custom-control-label " for="save-info ">Guardar mis datos</label>
+                        </div>
+                        <hr class="mb-4 ">
+                        <h4 class="d-flex justify-content-between align-items-center mb-3 ">
+                            <span class="text-muted ">Pago</span>
+                        </h4>
+                        <div class="d-block my-3 ">
+                            <div class="custom-control custom-radio ">
+                                <input id="credit " name="paymentMethod " type="radio " class="custom-control-input " required>
+                                <label class="custom-control-label " for="credit ">Tarjeta de crédito</label>
+                            </div>
+                            <div class="custom-control custom-radio ">
+                                <input id="debit " name="paymentMethod " type="radio " class="custom-control-input " required>
+                                <label class="custom-control-label " for="debit ">Tarjeta de débito</label>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col-md-6 mb-3 ">
+                                <label for="cc-name ">Nombre del titular:</label>
+                                <input type="text " class="form-control " id="cc-name " placeholder="Ej: Howard Parra " required>
+                                <small class="text-muted ">Nombre como figura en la tarjeta</small>
+                            </div>
+                            <div class="col-md-6 mb-3 ">
+                                <label for="cc-number ">Número de la tarjeta:</label>
+                                <input type="text " class="form-control " id="cc-number " placeholder="XXXX - XXXX - XXXX - XXXX " required>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col-md-3 mb-3 ">
+                                <label for="cc-expiration ">Vencimiento:</label>
+                                <input type="text " class="form-control " id="cc-expiration " placeholder="MM / AAAA " required>
+                            </div>
+                            <div class="col-md-3 mb-3 ">
+                                <label for="cc-cvv ">CVV:</label>
+                                <input type="text " class="form-control " id="cc-cvv " placeholder="--- " required>
+                            </div>
+                        </div>
+                        <hr class="mb-4 ">
+                        <button class="btn btn-lg btn-block btn-outline-success " type="submit " id="continuar ">Continuar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="final ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-md-2 mx-auto ">
+                    <h5 class="title mb-4 mt-3 font-bold ">INFORMACIÓN</h5>
+                    <ul class="lista ">
+                        <li>howard.parra95@gmail.com</li>
+                        <li>Teléfono 1126856603</li>
+                        <li>Lun a Dom de 9 a 20</li>
+                        <li>Bulnes 1431, CABA, Buenos Aires</li>
+                    </ul>
+                </div>
+                <div class="col-md-2 mx-auto ">
+                    <h5 class="title mb-4 mt-3 font-bold ">CONTÁCTANOS</h5>
+                    <ul class="lista_ico ">
+                        <li><i class="fab fa-facebook fa-3x "></i></li>
+                        <li><i class="fab fa-instagram fa-3x "></i></li>
+                        <li><i class="fab fa-whatsapp fa-3x "></i></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 mx-auto ">
+                    <h5 class="title mb-4 mt-3 font-bold ">ACEPTAMOS</h5>
+                    <ul class="lista_ico ">
+                        <li><i class="fab fa-cc-visa fa-3x "></i></li>
+                        <li><i class="fab fa-cc-amex fa-3x "></i></li>
+                        <li><i class="fab fa-cc-mastercard fa-3x "></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div id="derechos ">
+            <p>&copy; 2021 All Rights Reserved &reg; Howard's Services & Co.</p>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/a0d6ad12f7.js " crossorigin="anonymous "></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js " integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns " crossorigin="anonymous "></script>
+    <script src="js/app.js "></script>
+</body>
+
+</html>

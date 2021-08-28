@@ -1,0 +1,10 @@
+[
+    { "id": 1, "nombre": "Banana x 1Kg", "precio": 80, "imagen": "imagenes/bananas.jpg", "promocion": "50% OFF" },
+    { "id": 2, "nombre": "Cebolla morada x 1Kg", "precio": 100, "imagen": "imagenes/cebolla_morada.jpg", "promocion": "10% OFF" },
+    { "id": 3, "nombre": "Choclo amarillo x Unid.", "precio": 90, "imagen": "imagenes/choclo.jpg", "promocion": "35% OFF" },
+    { "id": 4, "nombre": "Maple de huevos colorados", "precio": 180, "imagen": "imagenes/huevos_colorados.jpeg", "promocion": "2x1" },
+    { "id": 5, "nombre": "Morron rojo x 1Kg", "precio": 150, "imagen": "imagenes/morron_rojo.jpg", "promocion": "50% OFF" },
+    { "id": 6, "nombre": "Palta x Unid.", "precio": 90, "imagen": "imagenes/palta.jpg", "promocion": "2x1" },
+    { "id": 7, "nombre": "Papines x 500 Gr", "precio": 90, "imagen": "imagenes/papines.png", "promocion": "30% OFF" },
+    { "id": 8, "nombre": "Tomate cherry x 500 Gr", "precio": 120, "imagen": "imagenes/tomate-cherry.jpg", "promocion": "20% OFF" }
+]
