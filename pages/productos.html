@@ -6,40 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simulador JavaScript | Productos</title>
-    <meta name="description" content="Tenemos frutas, verduras y productos orgánicos preparados especialmente para vos, de primera calidad, además contamos con delivery y si te registrás, tenés un 10% OFF en tu primera compra">
-    <meta name="keywords" content="VERDURAS, FRUTAS, COMPRA, PRODUCTOS, VARIEDAD, CATEGORIAS">
-    <link rel="shorcut icon" href="imagenes/vegetales.png" type="image/x-icon" />
+    <meta name="description" content="Somos una tienda virtual especialista en venta de zapatillas deportivas con la mejor calidad del mercado y si te registrás, tenés un 10% OFF en tu primera compra">
+    <meta name="keywords" content="ZAPATILLAS, DEPORTES, RUNNING, COMPRA, PRODUCTOS, VARIEDAD, CATEGORIAS">
+    <link rel="shorcut icon" href="../imagenes/sporto.png" type="image/x-icon"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
     <header>
-        <div id="arriba">¡<strong>REGISTRÁTE</strong> Y OBTENÉ UN 10% EN TU PRIMERA COMPRA!</div>
-        <nav class="navbar navbar-expand-md navbar-dark fixed" id="menu">
-            <a class="navbar-brand" id="ninguno"><img src="imagenes/vegetales.png" alt="" height="40px"> Simulador JavaScript</img>
+        <div class="arriba">¡<strong>REGISTRÁTE</strong> Y OBTENÉ UN 10% EN TU PRIMERA COMPRA!</div>
+        <nav class="navbar navbar-expand-md navbar-dark" id="menu">
+            <a href="../index.html" class="title"><img src="../imagenes/sporto.png" alt="logo" height="40px"> Simulador JavaScript</img>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html" id="ninguno">INICIO</a>
+                <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll">
+                    <li class="nav-item">
+                        <a class="navLink" href="../index.html">INICIO</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="nosotros.html" id="ninguno">NOSOTROS</a>
+                        <a class="navLink" href="productos.html">PRODUCTOS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="productos.html" id="ninguno">PRODUCTOS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="ayuda.html" id="ninguno">AYUDA</a>
+                        <a class="navLink" href="ayuda.html">AYUDA</a>
                     </li>
                 </ul>
                 <form class="d-flex">
-                    <input id=b uscar class="form-control mr-2" type="search" placeholder="¿Qué estás buscando?" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit" id="buscador">Buscar</button>
+                    <input class="form-navbar mr-2" type="search" placeholder="¿Qué estás buscando?" aria-label="Search">
+                    <button type="submit" id="buscador">Buscar</button>
                 </form>
             </div>
         </nav>
@@ -48,260 +45,257 @@
         <div class="titulo">
             <h1>Productos</h1>
             <h2>Elegí tus productos</h2>
-            <h3 id="disponible">X productos</h3>
+            <h3 class="disponible">X productos</h3>
         </div>
-        <picture>
-            <img src="" alt="">
-        </picture>
         <div id="productos" class="contenedor"></div>
         <div class="container">
             <div class="portfolio-menu mt-2 mb-4"></div>
             <div class="portfolio-item row">
-                <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                <div class="item selfie col-lg-3 col-md-4 col-sm">
                     <figure>
-                        <img src="imagenes/bananas.jpg" alt="" width="200px" height="150px" id="imagen">
+                        <img src="../imagenes/zapa1.jpg" alt="Zapatillas Nike Air Max 200" width="220px" height="200px" id="imagen">
                         <figcaption>
-                            <p id="titulo">Banana x 1Kg</p>
+                            <p id="titulo">Zapatillas Nike Air Max 200</p>
                         </figcaption>
                     </figure>
                     <div>
-                        <button type="button" class="btn btn-sm btn-outline-secondary" id="boton">Agregar</button>
-                        <small class="text-muted" id="precio">$80.00</small>
+                        <button type="button" class="btn btn-sm btn-outline-secondary boton" id="boton">Agregar</button>
+                        <small class="text-muted" id="precio">$17.999</small>
                     </div>
                 </div>
-                <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                <div class="item selfie col-lg-3 col-md-4 col-sm">
                     <figure>
-                        <img src="imagenes/cebolla_morada.jpg" alt="" width="200px" height="150px" id="imagen">
+                        <img src="../imagenes/zapa2.jpg" alt="Zapatillas Nike Downshifter 11" width="220px" height="200px" id="imagen">
                         <figcaption>
-                            <p id="titulo">Cebolla morada x 1Kg</p>
+                            <p id="titulo">Zapatillas Nike Downshifter 11</p>
                         </figcaption>
                     </figure>
                     <div>
-                        <button type="button" class="btn btn-sm btn-outline-secondary" id="boton">Agregar</button>
-                        <small class="text-muted" id="precio">$100.00</small>
+                        <button type="button" class="btn btn-sm btn-outline-secondary boton" id="boton">Agregar</button>
+                        <small class="text-muted" id="precio">$21.999</small>
                     </div>
                 </div>
-                <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                <div class="item selfie col-lg-3 col-md-4 col-sm">
                     <figure>
-                        <img src="imagenes/choclo.jpg" alt="" width="200px" height="150px" id="imagen">
+                        <img src="../imagenes/zapa3.jpg" alt="Zapatillas Nike Air Max Infinity 2" width="220px" height="200px" id="imagen">
                         <figcaption>
-                            <p id="titulo">Choclo amarillo x Unid.</p>
+                            <p id="titulo">Zapatillas Nike Air Max Infinity 2</p>
                         </figcaption>
                     </figure>
                     <div>
-                        <button type="button" class="btn btn-sm btn-outline-secondary" id="boton">Agregar</button>
-                        <small class="text-muted" id="precio">$90.00</small>
+                        <button type="button" class="btn btn-sm btn-outline-secondary boton" id="boton">Agregar</button>
+                        <small class="text-muted" id="precio">$20.999</small>
                     </div>
                 </div>
-                <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                <div class="item selfie col-lg-3 col-md-4 col-sm">
                     <figure>
-                        <img src="imagenes/espinaca.jpg" alt="" width="200px" height="150px" id="imagen">
+                        <img src="../imagenes/zapa4.jpg" alt="Zapatillas Nike Quest 4" width="220px" height="200px" id="imagen">
                         <figcaption>
-                            <p id="titulo">Espinaca x atado</p>
+                            <p id="titulo">Zapatillas Nike Quest 4</p>
                         </figcaption>
                     </figure>
                     <div>
-                        <button type="button" class="btn btn-sm btn-outline-secondary" id="boton">Agregar</button>
-                        <small class="text-muted" id="precio">$50.00</small>
+                        <button type="button" class="btn btn-sm btn-outline-secondary boton" id="boton">Agregar</button>
+                        <small class="text-muted" id="precio">$15.499</small>
                     </div>
                 </div>
-                <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                <div class="item selfie col-lg-3 col-md-4 col-sm">
                     <figure>
-                        <img src="imagenes/huevos_blancos.jpg" alt="" width="200px" height="150px" id="imagen">
+                        <img src="../imagenes/zapa5.jpg" alt="Zapatillas Nike Air Max Infinity 2" width="220px" height="200px" id="imagen">
                         <figcaption>
-                            <p id="titulo">Maple de huevos blancos</p>
+                            <p id="titulo">Zapatillas Nike Air Max Infinity 2</p>
                         </figcaption>
                     </figure>
                     <div>
-                        <button type="button" class="btn btn-sm btn-outline-secondary" id="boton">Agregar</button>
-                        <small class="text-muted" id="precio">$150.00</small>
+                        <button type="button" class="btn btn-sm btn-outline-secondary boton" id="boton">Agregar</button>
+                        <small class="text-muted" id="precio">$20.999</small>
                     </div>
                 </div>
-                <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                <div class="item selfie col-lg-3 col-md-4 col-sm">
                     <figure>
-                        <img src="imagenes/huevos_colorados.jpeg" alt="" width="200px" height="150px" id="imagen">
+                        <img src="../imagenes/zapa6.jpg" alt="Zapatillas Nike Air Zoom Pegasus 38" width="220px" height="200px" id="imagen">
                         <figcaption>
-                            <p id="titulo">Maple de huevos colorados</p>
+                            <p id="titulo">Zapatillas Nike Air Zoom Pegasus 38</p>
                         </figcaption>
                     </figure>
                     <div>
-                        <button type="button" class="btn btn-sm btn-outline-secondary" id="boton">Agregar</button>
-                        <small class="text-muted" id="precio">$180.00</small>
+                        <button type="button" class="btn btn-sm btn-outline-secondary boton" id="boton">Agregar</button>
+                        <small class="text-muted" id="precio">$24.999</small>
                     </div>
                 </div>
-                <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                <div class="item selfie col-lg-3 col-md-4 col-sm">
                     <figure>
-                        <img src="imagenes/lechuga_criolla.jpg" alt="" width="200px" height="150px" id="imagen">
+                        <img src="../imagenes/zapa7.jpg" alt="Zapatillas Nike Zoom Prevail" width="220px" height="200px" id="imagen">
                         <figcaption>
-                            <p id="titulo">Lechuga criolla x planta</p>
+                            <p id="titulo">Zapatillas Nike Zoom Prevail</p>
                         </figcaption>
                     </figure>
                     <div>
-                        <button type="button" class="btn btn-sm btn-outline-secondary" id="boton">Agregar</button>
-                        <small class="text-muted" id="precio">$70.00</small>
+                        <button type="button" class="btn btn-sm btn-outline-secondary boton" id="boton">Agregar</button>
+                        <small class="text-muted" id="precio">$19.999</small>
                     </div>
                 </div>
-                <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                <div class="item selfie col-lg-3 col-md-4 col-sm">
                     <figure>
-                        <img src="imagenes/lechuga_francesa.jpg" alt="" width="200px" height="150px" id="imagen">
+                        <img src="../imagenes/zapa8.jpg" alt="Zapatillas Nike Court Vision Lo Canvas" width="220px" height="200px" id="imagen">
                         <figcaption>
-                            <p id="titulo">Lechuga francesa x planta</p>
+                            <p id="titulo">Zapatillas Nike Court Vision Lo Canvas</p>
                         </figcaption>
                     </figure>
                     <div>
-                        <button type="button" class="btn btn-sm btn-outline-secondary" id="boton">Agregar</button>
-                        <small class="text-muted" id="precio">$80.00</small>
+                        <button type="button" class="btn btn-sm btn-outline-secondary boton" id="boton">Agregar</button>
+                        <small class="text-muted" id="precio">$13.499</small>
                     </div>
                 </div>
-                <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                <div class="item selfie col-lg-3 col-md-4 col-sm">
                     <figure>
-                        <img src="imagenes/lechuga_mantecosa.jpg" alt="" width="200px" height="150px" id="imagen">
+                        <img src="../imagenes/zapa9.jpg" alt="Zapatillas Nike Revolution 5" width="220px" height="200px" id="imagen">
                         <figcaption>
-                            <p id="titulo">Lechuga mantecosa x planta</p>
+                            <p id="titulo">Zapatillas Nike Revolution 5</p>
                         </figcaption>
                     </figure>
                     <div>
-                        <button type="button" class="btn btn-sm btn-outline-secondary" id="boton">Agregar</button>
-                        <small class="text-muted" id="precio">$60.00</small>
+                        <button type="button" class="btn btn-sm btn-outline-secondary boton" id="boton">Agregar</button>
+                        <small class="text-muted" id="precio">$14.299</small>
                     </div>
                 </div>
-                <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                <div class="item selfie col-lg-3 col-md-4 col-sm">
                     <figure>
-                        <img src="imagenes/lechuga_repollada.jpg" alt="" width="200px" height="150px" id="imagen">
+                        <img src="../imagenes/zapa10.jpg" alt="Zapatillas Nike React Miler 2" width="220px" height="200px" id="imagen">
                         <figcaption>
-                            <p id="titulo">Lechuga repollada x planta</p>
+                            <p id="titulo">Zapatillas Nike React Miler 2</p>
                         </figcaption>
                     </figure>
                     <div>
-                        <button type="button" class="btn btn-sm btn-outline-secondary" id="boton">Agregar</button>
-                        <small class="text-muted" id="precio">$80.00</small>
+                        <button type="button" class="btn btn-sm btn-outline-secondary boton" id="boton">Agregar</button>
+                        <small class="text-muted" id="precio">$25.999</small>
                     </div>
                 </div>
-                <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                <div class="item selfie col-lg-3 col-md-4 col-sm">
                     <figure>
-                        <img src="imagenes/morron_amarillo.jpg" alt="" width="200px" height="150px" id="imagen">
+                        <img src="../imagenes/zapa11.jpg" alt="Zapatillas Nike Renew Run" width="220px" height="200px" id="imagen">
                         <figcaption>
-                            <p id="titulo">Morron amarillo x 1Kg</p>
+                            <p id="titulo">Zapatillas Nike Renew Run</p>
                         </figcaption>
                     </figure>
                     <div>
-                        <button type="button" class="btn btn-sm btn-outline-secondary" id="boton">Agregar</button>
-                        <small class="text-muted" id="precio">$150.00</small>
+                        <button type="button" class="btn btn-sm btn-outline-secondary boton" id="boton">Agregar</button>
+                        <small class="text-muted" id="precio">$16.499</small>
                     </div>
                 </div>
-                <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                <div class="item selfie col-lg-3 col-md-4 col-sm">
                     <figure>
-                        <img src="imagenes/morron_rojo.jpg" alt="" width="200px" height="150px" id="imagen">
+                        <img src="../imagenes/zapa12.jpg" alt="Zapatillas Nike Revolution 5" width="220px" height="200px" id="imagen">
                         <figcaption>
-                            <p id="titulo">Morron rojo x 1Kg</p>
+                            <p id="titulo">Zapatillas Nike Revolution 5</p>
                         </figcaption>
                     </figure>
                     <div>
-                        <button type="button" class="btn btn-sm btn-outline-secondary" id="boton">Agregar</button>
-                        <small class="text-muted" id="precio">$150.00</small>
+                        <button type="button" class="btn btn-sm btn-outline-secondary boton" id="boton">Agregar</button>
+                        <small class="text-muted" id="precio">$12.499</small>
                     </div>
                 </div>
-                <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                <div class="item selfie col-lg-3 col-md-4 col-sm">
                     <figure>
-                        <img src="imagenes/morron_verde.jpg" alt="" width="200px" height="150px" id="imagen">
+                        <img src="../imagenes/zapa13.jpg" alt="Zapatillas Nike React Miler" width="220px" height="200px" id="imagen">
                         <figcaption>
-                            <p id="titulo">Morron verde x 1Kg</p>
+                            <p id="titulo">Zapatillas Nike React Miler</p>
                         </figcaption>
                     </figure>
                     <div>
-                        <button type="button" class="btn btn-sm btn-outline-secondary" id="boton">Agregar</button>
-                        <small class="text-muted" id="precio">$150.00</small>
+                        <button type="button" class="btn btn-sm btn-outline-secondary boton" id="boton">Agregar</button>
+                        <small class="text-muted" id="precio">$26.399</small>
                     </div>
                 </div>
-                <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                <div class="item selfie col-lg-3 col-md-4 col-sm">
                     <figure>
-                        <img src="imagenes/palta.jpg" alt="" width="200px" height="150px" id="imagen">
+                        <img src="../imagenes/zapa14.jpg" alt="Zapatillas Nike Renew Run 2" width="220px" height="200px" id="imagen">
                         <figcaption>
-                            <p id="titulo">Palta x Unid.</p>
+                            <p id="titulo">Zapatillas Nike Renew Run 2</p>
                         </figcaption>
                     </figure>
                     <div>
-                        <button type="button" class="btn btn-sm btn-outline-secondary" id="boton">Agregar</button>
-                        <small class="text-muted" id="precio">$90.00</small>
+                        <button type="button" class="btn btn-sm btn-outline-secondary boton" id="boton">Agregar</button>
+                        <small class="text-muted" id="precio">$17.999</small>
                     </div>
                 </div>
-                <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                <div class="item selfie col-lg-3 col-md-4 col-sm">
                     <figure>
-                        <img src="imagenes/papa_blanca.jpg" alt="" width="200px" height="150px" id="imagen">
+                        <img src="../imagenes/zapa15.jpg" alt="Zapatillas Nike React Miler 2" width="220px" height="200px" id="imagen">
                         <figcaption>
-                            <p id="titulo">Papa blanca x 1 Kg</p>
+                            <p id="titulo">Zapatillas Nike React Miler 2</p>
                         </figcaption>
                     </figure>
                     <div>
-                        <button type="button" class="btn btn-sm btn-outline-secondary" id="boton">Agregar</button>
-                        <small class="text-muted" id="precio">$60.00</small>
+                        <button type="button" class="btn btn-sm btn-outline-secondary boton" id="boton">Agregar</button>
+                        <small class="text-muted" id="precio">$25.999</small>
                     </div>
                 </div>
-                <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                <div class="item selfie col-lg-3 col-md-4 col-sm">
                     <figure>
-                        <img src="imagenes/papa_negra.jpg" alt="" width="200px" height="150px" id="imagen">
+                        <img src="../imagenes/zapa16.jpg" alt="Zapatillas Nike Downshifter 11" width="220px" height="200px" id="imagen">
                         <figcaption>
-                            <p id="titulo">Papa negra x 1 Kg</p>
+                            <p id="titulo">Zapatillas Nike Downshifter 11</p>
                         </figcaption>
                     </figure>
                     <div>
-                        <button type="button" class="btn btn-sm btn-outline-secondary" id="boton">Agregar</button>
-                        <small class="text-muted" id="precio">$50.00</small>
+                        <button type="button" class="btn btn-sm btn-outline-secondary boton" id="boton">Agregar</button>
+                        <small class="text-muted" id="precio">$13.499</small>
                     </div>
                 </div>
-                <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                <div class="item selfie col-lg-3 col-md-4 col-sm">
                     <figure>
-                        <img src="imagenes/papines.png" alt="" width="200px" height="150px" id="imagen">
+                        <img src="../imagenes/zapa17.jpg" alt="Zapatillas Nike Renew Run 2" width="220px" height="200px" id="imagen">
                         <figcaption>
-                            <p id="titulo">Papines x 500 Gr</p>
+                            <p id="titulo">Zapatillas Nike Renew Run 2</p>
                         </figcaption>
                     </figure>
                     <div>
-                        <button type="button" class="btn btn-sm btn-outline-secondary" id="boton">Agregar</button>
-                        <small class="text-muted" id="precio">$90.00</small>
+                        <button type="button" class="btn btn-sm btn-outline-secondary boton" id="boton">Agregar</button>
+                        <small class="text-muted" id="precio">$17.999</small>
                     </div>
                 </div>
-                <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                <div class="item selfie col-lg-3 col-md-4 col-sm">
                     <figure>
-                        <img src="imagenes/remolacha.jpg" alt="" width="200px" height="150px" id="imagen">
+                        <img src="../imagenes/zapa18.jpg" alt="Zapatillas Nike Reposto" width="220px" height="200px" id="imagen">
                         <figcaption>
-                            <p id="titulo">Remolacha x 1 Kg</p>
+                            <p id="titulo">Zapatillas Nike Reposto</p>
                         </figcaption>
                     </figure>
                     <div>
-                        <button type="button" class="btn btn-sm btn-outline-secondary" id="boton">Agregar</button>
-                        <small class="text-muted" id="precio">$90.00</small>
+                        <button type="button" class="btn btn-sm btn-outline-secondary boton" id="boton">Agregar</button>
+                        <small class="text-muted" id="precio">$16.999</small>
                     </div>
                 </div>
-                <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                <div class="item selfie col-lg-3 col-md-4 col-sm">
                     <figure>
-                        <img src="imagenes/tomate-cherry.jpg" alt="" width="200px" height="150px" id="imagen">
+                        <img src="../imagenes/zapa19.jpg" alt="Zapatillas Nike Renew Run 2" width="220px" height="200px" id="imagen">
                         <figcaption>
-                            <p id="titulo">Tomate cherry x 500 Gr</p>
+                            <p id="titulo">Zapatillas Nike Renew Run 2</p>
                         </figcaption>
                     </figure>
                     <div>
-                        <button type="button" class="btn btn-sm btn-outline-secondary" id="boton">Agregar</button>
-                        <small class="text-muted" id="precio">$120.00</small>
+                        <button type="button" class="btn btn-sm btn-outline-secondary boton" id="boton">Agregar</button>
+                        <small class="text-muted" id="precio">$17.999</small>
                     </div>
                 </div>
-                <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                <div class="item selfie col-lg-3 col-md-4 col-sm">
                     <figure>
-                        <img src="imagenes/tomate_perita.jpg" alt="" width="200px" height="150px" id="imagen">
+                        <img src="../imagenes/zapa20.jpg" alt="Zapatillas Nike Downshifter 11" width="220px" height="200px" id="imagen">
                         <figcaption>
-                            <p id="titulo">Tomate perita x 1 Kg</p>
+                            <p id="titulo">Zapatillas Nike Downshifter 11</p>
                         </figcaption>
                     </figure>
                     <div>
-                        <button type="button" class="btn btn-sm btn-outline-secondary" id="boton">Agregar</button>
-                        <small class="text-muted" id="precio">$80.00</small>
+                        <button type="button" class="btn btn-sm btn-outline-secondary boton" id="boton">Agregar</button>
+                        <small class="text-muted" id="precio">$13.499</small>
                     </div>
                 </div>
             </div>
         </div>
         </section>
         <h1>Productos agregados</h1>
-        <section class="container" id="posicion">
+        <section class="container">
             <div class="row">
                 <div class="col-md-6 order-md-2 mb-4">
                     <h4 class="d-flex justify-content-between align-items-center mb-3">
@@ -326,7 +320,7 @@
                         <div class="row ">
                             <div class="col-md-6 mb-3 ">
                                 <label for="firstName ">Nombre:</label>
-                                <input type="text " class="form-control " id="firstName " placeholder="Tu nombre " value=" " required>
+                                <input type="text" class="form-control" id="firstName " placeholder="Tu nombre" value=" " required>
                             </div>
                             <div class="col-md-6 mb-3 ">
                                 <label for="lastName ">Apellido:</label>
@@ -412,11 +406,11 @@
             </div>
         </section>
     </main>
-    <footer id="final ">
+    <footer>
         <div class="container ">
             <div class="row ">
                 <div class="col-md-2 mx-auto ">
-                    <h5 class="title mb-4 mt-3 font-bold ">INFORMACIÓN</h5>
+                    <h5 class="mb-4 mt-3 font-bold ">INFORMACIÓN</h5>
                     <ul class="lista ">
                         <li>howard.parra95@gmail.com</li>
                         <li>Teléfono 1126856603</li>
@@ -425,7 +419,7 @@
                     </ul>
                 </div>
                 <div class="col-md-2 mx-auto ">
-                    <h5 class="title mb-4 mt-3 font-bold ">CONTÁCTANOS</h5>
+                    <h5 class="mb-4 mt-3 font-bold ">CONTÁCTANOS</h5>
                     <ul class="lista_ico ">
                         <li><i class="fab fa-facebook fa-3x "></i></li>
                         <li><i class="fab fa-instagram fa-3x "></i></li>
@@ -433,7 +427,7 @@
                     </ul>
                 </div>
                 <div class="col-md-2 mx-auto ">
-                    <h5 class="title mb-4 mt-3 font-bold ">ACEPTAMOS</h5>
+                    <h5 class="mb-4 mt-3 font-bold ">ACEPTAMOS</h5>
                     <ul class="lista_ico ">
                         <li><i class="fab fa-cc-visa fa-3x "></i></li>
                         <li><i class="fab fa-cc-amex fa-3x "></i></li>
@@ -443,14 +437,14 @@
             </div>
         </div>
         <hr>
-        <div id="derechos ">
+        <div class="derechos "> 
             <p>&copy; 2021 All Rights Reserved &reg; Howard's Services & Co.</p>
         </div>
     </footer>
     <script src="https://kit.fontawesome.com/a0d6ad12f7.js " crossorigin="anonymous "></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js " integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns " crossorigin="anonymous "></script>
-    <script src="js/app.js "></script>
+    <script src="../js/app.js "></script>
 </body>
 
 </html>
