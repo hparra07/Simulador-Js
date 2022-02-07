@@ -88,7 +88,7 @@ p {
 /*-------------MENUS---------------*/
 
 #menu {
-    background-image: linear-gradient(to bottom, #054d05, #35c435);
+    background-color: #1a8b1a;
 }
 
 .navLink{
@@ -144,7 +144,7 @@ body {
 }
 
 footer {
-    background-image: linear-gradient(to top, #054d05, #35c435);
+    background-color: #1a8b1a;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -205,7 +205,6 @@ footer {
     background-clip: padding-box;
     border: 1px solid #ced4da;
     border-radius: 0.25rem;
-    transition: border-color blue .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
 
@@ -235,6 +234,7 @@ figure img {
 figure img:hover {
     transform: scale(1.2);
 }
+
 
 /*-------------- MEDIAS QUIERIES ---------------*/
 
