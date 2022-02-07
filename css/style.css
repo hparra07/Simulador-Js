@@ -30,7 +30,6 @@ blockquote {
 
 h1 {
     color: forestgreen;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 50px;
     text-align: center;
     margin-top: 20px;
@@ -38,7 +37,6 @@ h1 {
 
 h2, h3, h4 {
     color: forestgreen;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 30px;
     text-align: center;
     margin-top: 20px;
@@ -141,6 +139,7 @@ body {
     position: relative;
     padding-bottom: 500px;
     min-height: 1100px;
+    font-family: Century Gothic;
 }
 
 footer {
