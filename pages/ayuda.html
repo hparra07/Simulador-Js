@@ -6,40 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simulador JavaScript | Ayuda</title>
-    <meta name="description" content="Tenemos frutas, verduras y productos orgánicos preparados especialmente para vos, de primera calidad, además contamos con delivery y si te registrás, tenés un 10% OFF en tu primera compra">
-    <meta name="keywords" content="VERDURAS, FRUTAS, COMPRA, AYUDA, PREGUNTAS, CONTACTO">
-    <link rel="shorcut icon" href="imagenes/vegetales.png" type="image/x-icon" />
+    <meta name="description" content="Somos una tienda virtual especialista en venta de zapatillas deportivas con la mejor calidad del mercado y si te registrás, tenés un 10% OFF en tu primera compra">
+    <meta name="keywords" content="ZAPATILLAS, DEPORTES, RUNNING, COMPRA, AYUDA, PREGUNTAS, CONTACTO">
+    <link rel="shorcut icon" href="../imagenes/sporto.png" type="image/x-icon"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
     <header>
-        <div id="arriba">¡<strong>REGISTRÁTE</strong> Y OBTENÉ UN 10% EN TU PRIMERA COMPRA!</div>
-        <nav class="navbar navbar-expand-md navbar-dark fixed" id="menu">
-            <a class="navbar-brand" id="ninguno"><img src="imagenes/vegetales.png" alt="" height="40px"> Simulador JavaScript</img>
+        <div class="arriba">¡<strong>REGISTRÁTE</strong> Y OBTENÉ UN 10% EN TU PRIMERA COMPRA!</div>
+        <nav class="navbar navbar-expand-md navbar-dark" id="menu">
+            <a href="../index.html" class="title"><img src="../imagenes/sporto.png" alt="logo" height="40px"> Simulador JavaScript</img>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html" id="ninguno">INICIO</a>
+                <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll">
+                    <li class="nav-item">
+                        <a class="navLink" href="../index.html">INICIO</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="nosotros.html" id="ninguno">NOSOTROS</a>
+                        <a class="navLink" href="productos.html">PRODUCTOS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="productos.html" id="ninguno">PRODUCTOS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="ayuda.html" id="ninguno">AYUDA</a>
+                        <a class="navLink" href="ayuda.html">AYUDA</a>
                     </li>
                 </ul>
                 <form class="d-flex">
-                    <input id=b uscar class="form-control mr-2" type="search" placeholder="¿Qué estás buscando?" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit" id="buscador">Buscar</button>
+                    <input class="form-navbar mr-2" type="search" placeholder="¿Qué estás buscando?" aria-label="Search">
+                    <button type="submit" id="buscador">Buscar</button>
                 </form>
             </div>
         </nav>
@@ -48,29 +45,25 @@
         <h1>Ayuda</h1>
         <h2>Preguntas frecuentes</h2>
         <section class="container-fluid">
-            <ol id="ayuda" class="container-fluid">
+            <ol class="ayuda" class="container-fluid">
                 <li><strong>¿Cómo comprar?</strong></li>
-                <p id="respuestas">Podrás acceder a una lista desplegada de todos nuestros productos presionando en el botón “Agregar”, o bien, ingresar en cada una de las categorías de producto (Vegetales, Frutas, Orgánicos, etc.). Además puedes utilizar el buscador para
-                    acceder a los productos que desees. Luego puedes agregar los productos que elijas a tu carrito de compra haciendo click en “Añadir a Carrito”. Tu pedido puede ser revisado siempre que quieras, presionando el ícono de carrito de compra
-                    y podrás modificarlo desde allí.</p>
-                <li><strong>¿Cómo registrarse?</strong></li>
-                <p id="respuestas">Para ser usuario de nuestra página, deberás rellenar el formulario de registro con los datos necesarios.</p>
+                <p class="respuestas">Podrás acceder a una lista desplegada de todos nuestros productos presionando en el botón “Agregar”. Además puedes utilizar el buscador para acceder a los productos que desees. Luego puedes agregar los productos que elijas a tu carrito de compra haciendo click en “Agregar”.</p>
                 <li><strong>¿Cómo finalizar el pedido?</strong></li>
-                <p id="respuestas">Una vez que hayas seleccionado todos los productos que vas a adquirir, a través del Carrito de Compra selecciona la opción “Continuar” y procederás a iniciar el proceso de pago para posterior envío.</p>
+                <p class="respuestas">Una vez que hayas seleccionado todos los productos que vas a adquirir, a través del Carrito de Compra selecciona la opción “Continuar” y procederás a iniciar el proceso de pago para posterior envío.</p>
                 <li><strong>¿Cuáles son los métodos de pago?</strong></li>
-                <p id="respuestas">Podrás realizar el pago con todas las tarjetas de débito o crédito o a través de Mercado Pago.</p>
+                <p class="respuestas">Podrás realizar el pago con todas las tarjetas de débito o crédito o a través de Mercado Pago.</p>
                 <li><strong>¿Cómo modificar la compra?</strong></li>
-                <p id="respuestas">El pedido puede ser modificado desde el Carrito de Compra. Allí podrás tanto eliminar como modificar cantidades de productos.</p>
+                <p class="respuestas">El pedido puede ser modificado desde el Carrito de Compra. Allí podrás tanto eliminar como modificar cantidades de productos.</p>
                 <li><strong>¿Cuáles son los métodos de envío?</strong></li>
-                <p id="respuestas">Puedes elegir la opción de envío a domicilio, retiro en tienda o programar el envío para cuando lo desees.</p>
+                <p class="respuestas">Puedes elegir la opción de envío a domicilio, retiro en tienda o programar el envío para cuando lo desees.</p>
                 <li><strong>¿Cuáles son los horarios de atención?</strong></li>
-                <p id="respuestas">Trabajamos todos los días de 09 a 20 horas.</p>
+                <p class="respuestas">Trabajamos todos los días de 09 a 20 horas.</p>
                 <li><strong>¿A qué zonas llegamos?</strong></li>
-                <p id="respuestas">Cubrimos toda la zona de CABA.</p>
+                <p class="respuestas">Cubrimos toda la zona de CABA.</p>
                 <li><strong>¿Cómo obtener información de los productos?</strong></li>
-                <p id="respuestas">Contarás con información específica de cada producto haciendo click sobre el mismo. Encontrarás características, beneficios, datos de interés, tips y mucho más.</p>
+                <p class="respuestas">Contarás con información específica de cada producto haciendo click sobre el mismo. Encontrarás características, beneficios, datos de interés, tips y mucho más.</p>
                 <li><strong>¿Cuál es el costo de envío?</strong></li>
-                <p id="respuestas">Además del importe total de los productos que elijas, hay un costo de $250,00 por el valor de nuestro servicio. El mismo refleja los costos del servicio personalizado, el acondicionamiento y packaging de los productos, el armado del pedido
+                <p class="respuestas">Además del importe total de los productos que elijas, hay un costo de $250,00 por el valor de nuestro servicio. El mismo refleja los costos del servicio personalizado, el acondicionamiento y packaging de los productos, el armado del pedido
                     y el envío a domicilio (a excepción de los pedidos que superen los $1500).</p>
             </ol>
         </section>
@@ -127,45 +120,45 @@
             <div></div>
         </section>
     </main>
-    <footer id="final">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-2 mx-auto">
-                    <h5 class="title mb-4 mt-3 font-bold">INFORMACIÓN</h5>
-                    <ul class="lista">
+    <footer>
+        <div class="container ">
+            <div class="row ">
+                <div class="col-md-2 mx-auto ">
+                    <h5 class="mb-4 mt-3">INFORMACIÓN</h5>
+                    <ul class="lista ">
                         <li>howard.parra95@gmail.com</li>
                         <li>Teléfono 1126856603</li>
                         <li>Lun a Dom de 9 a 20</li>
                         <li>Bulnes 1431, CABA, Buenos Aires</li>
                     </ul>
                 </div>
-                <div class="col-md-2 mx-auto">
-                    <h5 class="title mb-4 mt-3 font-bold">CONTÁCTANOS</h5>
-                    <ul class="lista_ico">
-                        <li><i class="fab fa-facebook fa-3x"></i></li>
-                        <li><i class="fab fa-instagram fa-3x"></i></li>
-                        <li><i class="fab fa-whatsapp fa-3x"></i></li>
+                <div class="col-md-2 mx-auto ">
+                    <h5 class="mb-4 mt-3">CONTÁCTANOS</h5>
+                    <ul class="lista_ico ">
+                        <li><i class="fab fa-facebook fa-3x "></i></li>
+                        <li><i class="fab fa-instagram fa-3x "></i></li>
+                        <li><i class="fab fa-whatsapp fa-3x "></i></li>
                     </ul>
                 </div>
-                <div class="col-md-2 mx-auto">
-                    <h5 class="title mb-4 mt-3 font-bold ">ACEPTAMOS</h5>
-                    <ul class="lista_ico">
-                        <li><i class="fab fa-cc-visa fa-3x"></i></li>
-                        <li><i class="fab fa-cc-amex fa-3x"></i></li>
-                        <li><i class="fab fa-cc-mastercard fa-3x"></i></li>
+                <div class="col-md-2 mx-auto ">
+                    <h5 class="mb-4 mt-3">ACEPTAMOS</h5>
+                    <ul class="lista_ico ">
+                        <li><i class="fab fa-cc-visa fa-3x "></i></li>
+                        <li><i class="fab fa-cc-amex fa-3x "></i></li>
+                        <li><i class="fab fa-cc-mastercard fa-3x "></i></li>
                     </ul>
                 </div>
             </div>
         </div>
         <hr>
-        <div id="derechos">
-            <p>&copy; 2021 All Rights Reserved &reg; Howard's Services & Co.</p>
+        <div class="derechos">
+            <p><strong>&copy; 2021 All Rights Reserved &reg; Howard's Services & Co.</strong></p>
         </div>
     </footer>
     <script src="https://kit.fontawesome.com/a0d6ad12f7.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-    <script src="js/ayuda.js"></script>
+    <script src="../js/ayuda.js"></script>
 </body>
 
 </html>
