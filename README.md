@@ -67,6 +67,22 @@ Bootstrap es una biblioteca multiplataforma o conjunto de herramientas de códig
 
 [Bootstrap](https://getbootstrap.com/)
 
+Para poder aplicar Bootstrap se puede hacer de dos formas:
+
+1. Linkeando la CDN de CSS y JavaScript:
+
+```sh
+"<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">"
+
+"<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>"
+```
+2. Descargando los archivos CSS y JavaScript y linkeandolos al html:
+
+```sh
+"<link rel="stylesheet" href="./css/bootstrap-5.1.3-dist/css/bootstrap.css">"
+"<script src="./js/bootsrap.js"></script>"
+```
+
 ### Desarrollo
 
 Desarrollado por [Howard Parra](https://github.com/hparra07) para el curso de JavaScript en [Coderhouse](https://www.coderhouse.com/).
