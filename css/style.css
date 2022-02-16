@@ -139,7 +139,7 @@ body {
     position: relative;
     padding-bottom: 500px;
     min-height: 1100px;
-    font-family: Century Gothic;
+    font-family: Century Gothic, sans-serif;
 }
 
 footer {
