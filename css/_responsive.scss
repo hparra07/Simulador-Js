@@ -1,0 +1,47 @@
+/*-------------- MEDIAS QUIERIES ---------------*/
+
+/*-------------- SMARTPHONES -------------------*/
+
+@media (min-width: 360px) and (max-width: 480px){
+    header{
+        width: 100%;    
+    }
+    .carousel{
+        display: none;
+    }
+    nav img{
+        height: 20px;
+    }
+    main{
+        margin-bottom: 50px;
+    }
+    h5{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .lista_ico{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .derechos p{
+        font-size: 12px;
+    }
+}
+
+/*-------------- TABLETS & IPADS ----------------*/
+
+@media (min-width: 768px) and (max-width: 990px){
+    nav img{
+        height: 25px;
+    }
+    .form-navbar{
+        display: none;
+    }
+    nav form button{
+        display: none;
+    }
+    .img-carousel{
+        height: 250px;
+    }
+    
+}
