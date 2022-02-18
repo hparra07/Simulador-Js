@@ -1,4 +1,4 @@
-# Proyecto SPORTO
+# Proyecto SPORTO :athletic_shoe:
 
 Es un simulador de e-Commerce en el que podrás imitar una compra de zapatillas, intentar usar el buscador y pedir una consulta en el formulario de contacto.
 
