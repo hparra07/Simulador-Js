@@ -20,7 +20,7 @@ CSS son las siglas en inglés para "hojas de estilo en cascada", en inglés, Cas
 [CSS](https://www.w3schools.com/css/) ***sitio no oficial***.
 
 ### JavaScript
-CSS son las siglas en inglés para "hojas de estilo en cascada", en inglés, Cascading Style Sheets. Básicamente, es un lenguaje que maneja el diseño y presentación de las páginas web, es decir, cómo lucen cuando un usuario las visita. Funciona junto con el lenguaje HTML que se encarga del contenido básico de las páginas.
+JavaScript es el lenguaje de programación encargado de dotar de mayor interactividad y dinamismo a las páginas web. Cuando JavaScript se ejecuta en el navegador, no necesita de un compilador. El navegador lee directamente el código, sin necesidad de terceros.
 
 [JavaScript](https://www.ecma-international.org/publications-and-standards/standards/ecma-262/)
 
